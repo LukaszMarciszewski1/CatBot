@@ -1,5 +1,5 @@
 const fulfillment = require('dialogflow-fulfillment')
-const { responses1, responses2 } = require('./responses')
+const { responses1, responses2, responseFallback } = require('./responses')
 
 const mixMessages = (data) => Math.floor(Math.random() * data.length)
 
@@ -18,9 +18,7 @@ module.exports.getMessages = (req, res) => {
   }
 
   function fallback(agent) {
-    agent.add(
-      `Nie rozumiem co mówisz. Jestem tylko CatBotem. Możesz powtórzyć?`
-    )
+    agent.add(responseFallback)
   }
 
   let intentMap = new Map()

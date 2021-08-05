@@ -9,4 +9,5 @@ module.exports = {
     'hej ho, jestem wujek samo zło',
     'Hej, chłopaki, hej dziewczyny, jedzcie wszystkie witaminy',
   ],
+  responseFallback: 'Nie rozumiem co mówisz. Jestem tylko CatBotem. Możesz powtórzyć?'
 }
