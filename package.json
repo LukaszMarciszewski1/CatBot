@@ -1,0 +1,30 @@
+{
+  "name": "catbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "cypress:open": "cypress open"
+  },
+  "author": "Łukasz Marciszewski",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^2.14.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dialogflow-fulfillment": "^0.6.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cypress": "^8.1.0"
+  }
+}
