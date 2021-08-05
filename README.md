@@ -9,6 +9,8 @@
 ```
 You can just clone repository files and run to install all dependencies:
 
+Node (version 14.17.0)
+
 ```
 ### 2. Install Backend
 
