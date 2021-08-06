@@ -9,6 +9,8 @@
 ```
 You can just clone repository files and run to install all dependencies:
 
+Node (version 14.17.0)
+
 ```
 ### 2. Install Backend
 
@@ -30,6 +32,7 @@ $ npm run dev
 
 ## Tests
 the test file is in the folder cypress/integration/chatbot
+
 base address is in file cypress.json
 
 ### run test
