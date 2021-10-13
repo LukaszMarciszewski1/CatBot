@@ -1,6 +1,3 @@
-## Demo Website
-
-- 👉 Heroku : [https://pizza-cutbots.herokuapp.com/](https://pizza-cutbots.herokuapp.com/)
 
 ## Run Locally
 
